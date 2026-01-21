@@ -87,6 +87,23 @@ function Cart() {
         </div>
       ))}
 
+       {/* CLEAR CART */}
+          <button
+            onClick={clearCart}
+            style={{
+              background: "#999",
+              color: "#fff",
+              padding: "14px 28px",
+              borderRadius: "30px",
+              border: "none",
+              cursor: "pointer",
+              fontWeight: "600",
+            }}
+          >
+            Clear Cart
+          </button>
+
+
       {/* PROCEED TO CHECKOUT */}
       {cart.length > 0 && (
         <button
